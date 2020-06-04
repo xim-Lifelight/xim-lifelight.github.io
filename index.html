@@ -1,35 +1,41 @@
 <html>
 <head>
     <title>Deep link iOS test</title>
-    <meta name="apple-itunes-app" content="app-id=1385389024"/>
+    <meta name="apple-itunes-app" content="app-id=1385389024" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-Enter Gender: <br><input type="text" id="myGender" value="male"><br><br>
-Enter Age: <br><input type="text" id="myAge" value="34"><br><br>
-Enter Height: <br><input type="text" id="myHeight" value="185"><br><br>
-Enter Signature: <br><input type="text" id="signature" value="lzwDt5MM5rXGadtGuPU0Y0ztHp+ldHmdKgwDZRo7xv9k+y+CFsR294jwGCed9hTroJ8dUMXrOo9zXePluUDsGOOdu0VbwuP/BIys67vt9S2LcBvawKElNpzFa63edS/cQ9NOED4SLSF5fma9hzjCl+q2meNZegZQDr4HOMww8s0oo7G0mJ5NYjJH1ZJhiW1JGpxjqgtgkbFvD3UTXnyJTQJ9JOov/vxu+McLC1v+OJ7v8wezWjvMdXe29xiqgqbDVQeOFYGWyLXm5ypB+9lXBbjvxxL1FwCLZb6r3VjxbkZcz5dMV57AxhwYK9Mpvq+Te0/t4VHNeRSh0ZYdegLrfpmn3MDVm8+BETs7rxiED4EEzd2K6MYMq2POJoN3qA045fWNhIw1mHrNLyB2rbZb3c3ybz0Im18qOtRFdvAokpZF/umPf7E66VTwam9VV3bSjg4Lz3k7tAnJoWNEYNSAqWDO6vnweyPmOfkm3UkUrK6QPe9K/3TbWsiuERnxsdnvXrgyQNAtdbu2eAS0A6rwwkm98jaygPx3aSy0LsupOYOGqfSXCcO47LLp6G4ylfPyzepFpRV0MPavPFZOWC8aOw5hElTxTMjObXFDPoM0FObEHI+4nWg4/H/rg5ImHK1heacxbI3eJTMyc8bdK/rkF8tE/1mMen5DbKRGsrRaenE="><br><br>
+    Enter Gender: <br><input type="text" id="myGender" value="male"><br><br>
+    Enter Age: <br><input type="text" id="myAge" value="34"><br><br>
+    Enter Height: <br><input type="text" id="myHeight" value="185"><br><br>
+    Enter Client URL: <br><input type="text" id="client_url" value="https://dummy-endpoint"><br><br>
 
-<p></p>
+    <p></p>
 
-<button onclick="myFunction()">Submit and open Lifelight</button>
+    <button onclick="myFunction()">Submit and open Lifelight</button>
 
-<p id="demo"></p>
+    <p id="demo"></p>
 
-<script>
-function myFunction() {
+    <script>
+        function myFunction() {
 
-var gender = document.getElementById("myGender").value;
-var age = document.getElementById("myAge").value;
-var height = document.getElementById("myHeight").value;
-var signature = document.getElementById("signature").value;
+            var gender = document.getElementById("myGender").value;
+            var age = document.getElementById("myAge").value;
+            var height = document.getElementById("myHeight").value;
+            var client_url = document.getElementById("client_url").value;
 
-location.replace("lifelight://sometext/gender="+gender+"&age="+age+"&height="+height+"&uniqueID=1233211233"+"&signature="+signature)
+            var deeplinkurl = "lifelight://first/gender=" + gender + "&age=" + age + "&height=" + height + "&uniqueID=1233211233" + "&client_url=" + client_url
 
-}
+            console.log(deeplinkurl);
 
-</script>
+				
+			var demoP = document.getElementById("demo")
+			demoP.innerText = deeplinkurl;
 
+            location.replace(deeplinkurl)
+        }
+
+    </script>
 </body>
 </html>
