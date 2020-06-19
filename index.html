@@ -11,6 +11,7 @@
     Enter Height: <br><input type="text" id="myHeight" value="185"><br><br>
     Enter UniqueID: <br><input type="text" id="unique_id" value="1233211233"><br><br>
     Enter Client URL: <br><input type="text" id="client_url" value="https://dummy-endpoint"><br><br>
+    Enter Access token: <br><input type="text" id="access_token" value=""><br><br>
 
     <p></p>
 
@@ -26,14 +27,14 @@
             var height = document.getElementById("myHeight").value;
             var unique_id = document.getElementById("unique_id").value;
             var client_url = document.getElementById("client_url").value;
+            var access_token = document.getElementById("access_token").value;
 
-            var deeplinkurl = "lifelight://first/gender=" + gender + "&age=" + age + "&height=" + height + "&uniqueID=" + unique_id + "&client_url=" + client_url
+            var deeplinkurl = "lifelight://first/gender=" + gender + "&age=" + age + "&height=" + height + "&uniqueID=" + unique_id + "&client_url=" + client_url + "&access_token=" + access_token
 
             console.log(deeplinkurl);
-
 				
-			var demoP = document.getElementById("demo")
-			demoP.innerText = deeplinkurl;
+            var demoP = document.getElementById("demo")
+            demoP.innerText = deeplinkurl;
 
             location.replace(deeplinkurl)
         }
