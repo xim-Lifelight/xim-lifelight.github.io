@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.68 22.68">
+  <title>cam back</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_3" data-name="Layer 3">
+      <g>
+        <circle cx="11.34" cy="11.34" r="11.34" style="fill: #e44e3e"/>
+        <path d="M15.39,4.05H7.29A1.63,1.63,0,0,0,5.67,5.67V17a1.63,1.63,0,0,0,1.62,1.62h8.1A1.63,1.63,0,0,0,17,17V5.67A1.63,1.63,0,0,0,15.39,4.05ZM11.34,8.91A1.62,1.62,0,1,1,13,7.29,1.62,1.62,0,0,1,11.34,8.91Z" style="fill: #fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
