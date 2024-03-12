@@ -1,6 +1,6 @@
 /* Scss Document */
-.bg-red {
-  background-color: #e74c3c; }
+.bg-blue {
+  background-color: #3496D9; }
 
 .bg-white {
   background-color: #fff; }
@@ -111,7 +111,7 @@ table.blueTable thead th {
   padding-bottom: 10px; }
 
 .toc-button {
-  background-color: #e74c3c;
+  background-color: #3496D9;
   border-radius: 30px;
   font-weight: 700;
   margin-top: 10px;
@@ -134,10 +134,10 @@ h1 {
   line-height: 80px;
   margin-top: 0px;
   margin-bottom: 8px;
-  color: #e74c3c; }
+  color: #3496D9; }
 
 h2 {
-  color: #e74c3c;
+  color: #3496D9;
   margin-bottom: 3px; }
 
 h6 {
@@ -150,7 +150,7 @@ h6 {
   padding: 3px; }
 
 h2 {
-  color: #e74c3c;
+  color: #3496D9;
   margin-bottom: 3px;
   font-size: 2em; }
 
@@ -170,8 +170,8 @@ p {
 .fnt-blue {
   color: #3498db; }
 
-.fnt-red {
-  color: #e74c3c; }
+.fnt-blue {
+  color: #3496D9; }
 
 blockquote {
   font-style: italic; }
@@ -182,11 +182,11 @@ ul, ol {
 a {
   color: #2c3e50; }
 
-.bg-mid-blue a, .bg-red a {
+.bg-mid-blue a, .bg-blue a {
   color: #fff; }
 
-.span-red {
-  color: #e74c3c; }
+.span-blue {
+  color: #3496D9; }
 
 .inline-shift {
   vertical-align: middle; }
