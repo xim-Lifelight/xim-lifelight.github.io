@@ -48,6 +48,11 @@ img, object, embed, video {
 	padding-right: 2%;
 }
 
+.container {
+   display: flex; /* Enable flexbox for the container */
+   justify-content: flex-end; /* Align content to the right end */
+}
+
 #logo {padding-top: 40px;}
 
 .text-column {
