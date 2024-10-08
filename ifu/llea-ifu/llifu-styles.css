@@ -48,6 +48,16 @@ img, object, embed, video {
    display: flex; /* Enable flexbox for the container */
    justify-content: flex-end; /* Align content to the right end */
 }
+.img {
+    max-width: 25%;
+    max-height:15%;
+    float: left;
+  }
+.side {
+   display: inline-block; /* Enable flexbox for the container */
+   align-items: top;
+   padding-left: 2%;
+}
 
 #logo {
   padding-top: 40px; }
