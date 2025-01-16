@@ -1,0 +1,231 @@
+/* Scss Document */
+
+$ll-white: #fff;
+$ll-grey: #ecf0f1;
+$ll-red: #e74c3c;
+$ll-pink: #f5b7b1;
+$ll-dark-blue: #2c3e50;
+$ll-mid-blue: #2980b9;
+$ll-light-blue: #3498db;
+
+.bg-red {background-color: $ll-red;}
+.bg-white {background-color: $ll-white;}
+.bg-grey {background-color: $ll-grey;}
+.bg-mid-blue {background-color: $ll-mid-blue;}
+.bg-light-blue {background-color: $ll-light-blue;}
+
+
+* {box-sizing: border-box;}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: $ll-dark-blue;
+  	line-height: 1.6;
+  	margin: 0;
+    font-weight: 300;
+    font-size: 1.15em;
+}
+
+/*article, aside, section, nav, figure, header, footer {
+	display: block;
+}*/
+
+
+img, object, embed, video {
+	max-width: 100%; }
+/*-------------CONTAINERS-----------------*/
+.centred {
+	max-width: 738px;
+    margin: 0 auto;
+/*    padding-top: 40px;*/
+    padding-bottom: 100px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.container {
+   display: flex; /* Enable flexbox for the container */
+   justify-content: flex-end; /* Align content to the right end */
+}
+
+#logo {padding-top: 40px;}
+
+.text-column {
+	column-count: 2; 
+	column-gap: 12px;
+    flex: 0 0 100%;
+}
+
+.column-holder {
+	display: flex;
+	justify-content: space-between;
+}
+.column2, .column2b {
+    flex: 0 0 48%;
+}
+.column3, .column3b {
+	flex: 0 0 31%;
+}
+.column2-3, .column2-3b {
+	flex: 0 0 65%;
+}
+/*barcode*/
+.column-holder2 {
+  display: flex;
+  justify-content: flex-start; }
+
+.columnSQ {
+  flex: 0 1 auto;
+  padding-right: 8px; }
+
+/*/barcode*/
+
+section {
+    margin-bottom: 30px;
+}
+
+table.blueTable {
+  border: 1px solid $ll-red;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid $ll-dark-blue;
+  padding: 3px;
+}
+table.blueTable thead {
+  background: $ll-dark-blue;
+}
+table.blueTable thead th {
+  font-weight: 700;
+  color: $ll-white;
+}
+.table-align-top {
+  vertical-align: top;
+}
+
+.bg-colour-padding {
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img-inline {padding-right: 4px;}
+.img-vir-padding {padding-top: 10px;
+padding-bottom: 10px;}
+
+.toc-button {
+    background-color: $ll-red;
+    border-radius: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+	margin-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline-block;
+}
+.toc-button a {
+    color: $ll-white;
+    text-decoration: none;
+}
+
+/*-------------FONTS-----------------*/
+strong {font-weight: 700;}
+
+h1 {
+	font-weight: 700;
+	font-size: 3em;
+	line-height: 80px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+    color: $ll-red;
+}
+h2 {color: $ll-red;
+margin-bottom: 3px;}
+
+h6 {color: $ll-white;
+    background: green;
+font-size: .7em;
+    font-style: italic;
+    font-weight: 700;
+margin: 0;
+padding: 3px;}
+
+h2 {color: $ll-red;
+margin-bottom: 3px;
+font-size: 2em;}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p {margin-top: 0px;}
+
+.strong { font-weight: 700; }
+.fnt-white {color: $ll-white;}
+.fnt-blue {color: $ll-light-blue;}
+.fnt-red {color: $ll-red;}
+
+blockquote {font-style: italic;}
+
+ul, ol {margin-top: 0px;}
+
+a {	color: $ll-dark-blue; }
+.bg-mid-blue a, .bg-red a {
+	color: $ll-white;
+}
+.span-red {color: $ll-red;}
+
+.inline-shift {vertical-align: middle;}
+.inline-top {vertical-align: bottom;}
+
+.small {
+  font-size: .75em;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+/*-------------MEDIA QUERIES------------------*/
+@media (max-width: 600px) {
+	.column-holder {
+        flex-wrap: wrap;
+}
+    .column2 {
+	flex: 0 0 100%;
+}
+    .column3 {
+	flex: 0 0 100%;
+}
+.column2-3 {
+	flex: 0 0 100%;
+}
+	.text-column {
+	column-count: 1;
+	column-gap: 0px;
+}
+    .img-reduced {width: 50%;}
+
+}
+
+@media print { 
+nav, .toc-button { display: none !important; } 
+body {
+  	line-height: 1.2;
+    font-size: .8em;
+}  
+    .centred {
+	max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}  
+    .img-reduced {width: 40%;}
+       .img-reduced2 {width: 95%;}
+    
+    /*.break {page-break-after: always;}*/
+  
+}
