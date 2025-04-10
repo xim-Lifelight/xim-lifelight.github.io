@@ -1,6 +1,6 @@
 /* Scss Document */
 .bg-red {
-  background-color: #e74c3c; }
+  background-color: #3496D9; }
 
 .bg-white {
   background-color: #fff; }
@@ -134,10 +134,10 @@ h1 {
   line-height: 80px;
   margin-top: 0px;
   margin-bottom: 8px;
-  color: #e74c3c; }
+  color: #3496D9; }
 
 h2 {
-  color: #e74c3c;
+  color: #3496D9;
   margin-bottom: 3px; }
 
 h6 {
@@ -150,7 +150,7 @@ h6 {
   padding: 3px; }
 
 h2 {
-  color: #e74c3c;
+  color: #3496D9;
   margin-bottom: 3px;
   font-size: 2em; }
 
@@ -171,7 +171,7 @@ p {
   color: #3498db; }
 
 .fnt-red {
-  color: #e74c3c; }
+  color: #3496D9; }
 
 blockquote {
   font-style: italic; }
@@ -186,7 +186,7 @@ a {
   color: #fff; }
 
 .span-red {
-  color: #e74c3c; }
+  color: #3496D9; }
 
 .inline-shift {
   vertical-align: middle; }

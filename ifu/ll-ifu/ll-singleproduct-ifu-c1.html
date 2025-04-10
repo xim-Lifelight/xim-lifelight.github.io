@@ -20,40 +20,27 @@
 <body>
 <main class="centred">
   <section id="logo"> <!--cover & title-->
-    <img src="img/lifelight-logo.svg" alt="lifelight logo" width="350px"/>
-    <h1>Instructions For Use</h1>
-    <img src="../ll-ifu/img/operator and subject.svg" alt="subject and operator with lifelight" width="400px" class="img-reduced"/> </section>
-  <section id="toc"> <!--table of content navigation-->
-    <nav>
-      <h2>Table of contents</h2>
-      <ul>
-        <li><a href="#intended">Lifelight Intended Purpose</a></li>
-        <li><a href="#warnings">Warnings</a></li>
-        <li><a href="#what">What Lifelight does and how it works</a></li>
-        <li><a href="#benefits">Intended Benefits</a></li>
-        <li><a href="#preparation">Preparation and set up of Lifelight before taking a measurement</a></li>
-        <li><a href="#measurement">Taking a Measurement</a></li>
-        <li><a href="#retake">When to retake a measurement</a></li>
-        <li><a href="#accuracy">Measuring degree of accuracy</a></li>
-        <li><a href="#settings">Setting screen</a></li>
-        <li><a href="#technical">Technical Description</a></li>
-        <li><a href="#other">Other notes</a></li>
-      </ul>
-    </nav>
-  </section>
+
+    <div class="container">
+        <img src="img/lifelight_logo_updated.SVG" alt="logo"
+             width="180px" height="150px"/>
+    </div>
+    <h1>Lifelight® </h1>
+    <h2>Instructions For Use</h2>
+    <img src="img/operator and subject.svg" alt="subject and operator with lifelight"
+         width="400px" class="img-reduced"/></section>
   <section id="info"><!--top plate info COPY FROM HERE-->
-    <div class="column-holder">
       <div class="column2">
-        <p><strong>Date of Issue:</strong> 17 January 2025<br>
+        <p><strong>Date of Issue:</strong> <br>
           <strong>IFU Ref:</strong> REC-QMS-005<br>
-          <strong>Revision:</strong> &nbsp;6<br>
-          <strong>If revised date of revision:</strong> 17 January 2025 <br>
+          <strong>Revision:</strong><br>
+          <strong>If revised date of revision:</strong>  <br>
           <strong>Change Control Number:</strong> CC-2024-002<br>
           <strong>Unique Device Identifier:</strong> 05060776720019<br>
           <strong>Name of device:</strong> Lifelight<br>
           <strong>Trademark:</strong> Lifelight</p>
       </div>
-      <div class="column2">
+      <div class="columnSQ">
         <p><img src="img/factory.svg" alt="factory" width="40px"/> <strong>Manufacturer</strong></p>
         <p>XIM Ltd.<br>
           University of Southampton Science Park<br>
@@ -62,7 +49,6 @@
           Hampshire<br>
           United Kingdom<br>
           SO16 7NP</p>
-      </div>
     </div>
     <div class="column-holder2">
       <div class="columnSQ">
@@ -70,9 +56,9 @@
       </div>
       <div class="columnSQ">
         <p class="small">(01)05060776720019&nbsp;</p>
-        <p class="small">(11)250117</p>
+        <p class="small">(11)</p>
         <p class="small">(21)LLF-002</p>
-        <p class="small">(8012)5.0.0-0</p>
+        <p class="small">(8012)</p>
       </div>
     </div>
     <h3>Symbols on the device and documentation</h3>
@@ -124,13 +110,12 @@
       </tr>
       </tbody>
     </table>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <div class="break"></div>
   <!--PRINT BREAK-->
   <section id="intended"> <!--Intended use-->
     <h2>Lifelight  Intended Purpose / Indications For Use</h2>
-    <div class="bg-grey bg-colour-padding ">
+    <div class="column2">
       <p>Lifelight non-contact medical device software is intended for non-invasive measurement of blood pressure (mmHg) and pulse rate (bpm), in adult patients aged 18 and above, regardless of ethnicity or gender. The software is not intended for pregnant women, paediatric use, or persons with atrial fibrillation or low perfusion conditions like anaemia, jaundice, birthmarks, rosacea, psoriasis, acute acne and erythropoietic protoporphyria. Lifelight measures vital physiological parameters through a method called remote photoplethysmography (rPPG) which is a non-invasive means of detecting cardiovascular blood volume pulse (BVP) through small changes in reflected light from the skin surface. Lifelight works by using a mobile device camera to detect the minute colour changes in the skin of a patient’s face caused by heart beats.</p>
       <p><strong>Intended Patient Population:</strong><br>
         Adult patients aged 18 and above, regardless of ethnicity or gender. This medical device software is not intended for pregnant women, paediatric use, or persons with atrial fibrillation or low perfusion conditions like anaemia, jaundice, birthmarks, rosacea, psoriasis, acute acne and erythropoietic protoporphyria.</p>
@@ -169,7 +154,6 @@
         <li>Subjects with migraine. </li>
       </ul>
     </div>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
     <h2>Important notes on measurement vs monitoring:</h2>
     <p>Lifelight is <strong>not</strong> intended for continuous monitoring of blood pressure or pulse rate. It is also <strong>not</strong> intended for environments of use where continuous monitoring of 
       blood pressure or pulse rate is required. Lifelight is intended only for spot check measurement of blood pressure and pulse rate.</p>
@@ -182,21 +166,19 @@
   <section id="warnings"> <!--warnings-->
 
 
-    <div class="bg-grey bg-colour-padding column-holder">
       <div class="">
         <h2>Terminology</h2>
         <ul>
-          <li> <strong>Measurement Signal Quality</strong> or <strong>MSQ</strong> –  is the quality of the data being measured by the device camera. It does not refer to the wifi or data connection.</li>
+          <li> <strong>Measurement Signal Quality</strong> –  is the quality of the data being measured by the device camera. It does not refer to the wifi or data connection.</li>
           <li><strong>Operator</strong> – the person using Lifelight to measure someone else. E.g. a clinician measuring a patient.</li>
           <li><strong>Subject</strong> – the person being measured. Either by themselves using the app or by another person called the operator in this document.</li>
           <li><strong>Device</strong> – the smart phone or tablet running the Lifelight application. </li>
-          <li><strong>Monitor</strong> – the Lifelight application running on the device connected to the remote algorithm that returns the results. </li>
+          <li><strong>Medical device software</strong> – the Lifelight application running on the device connected to the remote algorithm that returns the results. </li>
         </ul>
       </div>
-    </div>
+   
     <h2>Warnings and Statements that can appear on the app</h2>
-    <p> Warning and statements can appear within the app or in this document. When a warning is issued, the warning triangle below will be displayed.</p>
-    <img src="img/caution.svg" alt="caution" width="60px" class="inline-shift"/>
+    <p> Warning and statements can appear within the app or in this document.</p>
     <p></p>
     <p>The app is safe for patients and clinicians when used in accordance with the instructions and the warning statements presented in these Instructions For Use.</p>
     <p>Before using the app, you must familiarize yourself with all warnings to ensure good measurement signal quality and usable  measurements.</p>
@@ -204,8 +186,8 @@
     <ul>
       <li class="strong">Failure to understand and observe any warning statement in this manual could lead to poor signal quality and no measurements returned or inaccurate results.</li>
     </ul>
-    <h2 class="strong">Low Measurement Signal Quality</h2>
-    <p class="strong">Low MSQ, leading to no results returned at the end of the measurement, can occur with one or more of the following causes:</p>
+    <h2 class="strong">Low Measurement Quality</h2>
+    <p class="strong">Low measurement quality, leading to no results returned at the end of the measurement, can occur with one or more of the following causes:</p>
     <h3>Lighting</h3>
     <ol>
       <li>The subject (the person being measured) is poorly lit.</li>
@@ -227,7 +209,6 @@
       <li>The subject does not have their forehead and cheeks visible.</li>
       <li>The  device lens is not clean.</li>
     </ol>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <div class="break"></div>
   <!--PRINT BREAK-->
@@ -236,59 +217,49 @@
 
   <section id="what"> <!--what ll does-->
     <h3>What Lifelight does and how it works</h3>
-    <div class="text-column">
+    <div class="">
       <p>Lifelight is a software application that is a medical device. It is intended to be a simple way to estimate heart rate and blood pressure in 60 seconds or less. Through the device camera, the software measures changes in facial skin colour each time the heart beats. When the colour information is  processed, the software provides  measurements for heart rate and blood pressure.</p>
     </div>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <section id="benefits"> <!--benefits-->
     <h2>Intended Benefits</h2>
-    <div class="text-column">
       <p><strong>Benefit 1.</strong> Lifelight measures pulse rate and blood pressure simultaneously. </p>
       <p><strong>Benefit 2.</strong> Lifelight provides pulse rate and blood pressure measurements in situations where contact-based methods are not possible or not desirable. </p>
       <p><strong>Benefit 3.</strong> Lifelight measures pulse rate and blood pressure without using a cuff or requiring any other device or instrument, including for calibration purposes.</p>
-      </div>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <section id="preparation"><!--Preparation and setup-->
     <h2> Preparation and set up of Lifelight before taking a measurement. </h2>
     <h3>Device preparation and minimum requirements.</h3>
-    <div class="text-column">
       <ul>
-        <li>Lifelight is designed to work on a range of validated  devices – on iPad 6(9.7), iPad 7(10.2) and iPad 8(10.2). Ensure the device’s operating system is up to date.</li>
+        <li>Lifelight is designed to work on a range of validated mobile devices. The list of validated devices can be
+          found at <a href="https://lifelight.ai/validated-devices/">https://lifelight.ai/validated-devices/ </a>. </li>
+        <li>Ensure the device’s operating system is up to date.</li>
         <li>No calibration is required. </li>
         <li>Make sure you are using the latest version of the Lifelight app.</li>
         <li>Ensure the device is adequately charged for your requirements. </li>
         <li>Ensure the device lenses are clean.</li>
       </ul>
-    </div>
     <h3>IT networks characteristics and IT security measures.</h3>
-    <div class="text-column">
       <ul>
         <li>Lifelight requires a stable connection to the internet to function.</li>
         <li> The minimum connection speed required is 0.128 mbps upload and 0.128 mbps download. </li>
         <li>For the software to run as intended, the connection to the Wi-Fi must be secure and protected from unauthorized access.</li>
       </ul>
-    </div>
     <h3>Keeping the device still.</h3>
-    <div class="text-column">
       <ul>
         <li>The device running Lifelight must be held as still as possible when taking a measurement.</li>
         <li>If the device is held in a stand resting on a surface, that surface should be free from movement or vibration.</li>
         <li>Ideal stands allow the device to be repositioned and angled to accommodate the different heights of subjects if used by an operator for multiple subjects.</li>
       </ul>
-    </div>
+
     <h3>Environment, lighting and special facilities.</h3>
-    <div class="text-column">
       <ul>
         <li>For optimum Lifelight results, the environment, room or space should be distraction-free and allow the subject’s face to be well illuminated.</li>
         <li>Ideal lighting conditions allow the subject’s face to be well lit  without strong shadows. Multiple strong, diffuse light sources are ideal.</li>
         <li>Lifelight may function poorly if the subject’s face is lit from a single strong light source that creates strong shadows across the forehead and cheeks. </li>
         <li>Lifelight may function poorly if the subject is strongly backlit, and/or if the space the subject is in is strongly lit and the subject isn’t.</li>
       </ul>
-    </div>
     <h3>Subject – the person being measured.</h3>
-    <div class="text-column">
       <ul>
         <li>Lifelight is validated for subjects age 18 and above. </li>
         <li>Lifelight works by measuring skin colour from cheeks and forehead. Therefore these areas of the subject's face must be visible and well illuminated.</li>
@@ -300,110 +271,56 @@
         <li>Subjects should sit quietly for a few minutes before taking the measurement.</li>
         <li>Subjects should be  relaxed with their back and feet supported and arms and legs uncrossed.</li>
       </ul>
-    </div>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <!--closes preparation and setup-->
   <section id="measurement"><!--Taking a measurement-->
 
     <h2>Taking a measurement</h2>
     <p>Ensure the <strong>preparation and set up</strong> steps described previously have been followed.</p>
-    <p>The following instructions vary depending on three variables:</p>
-    <ol>
-      <li>Device screen size, phone or tablet.</li>
-      <li>Whether instructions are on or off.</li>
-      <li>Whether Lifelight is being used by two people (operator and subject), or one person such as a patient at home. </li>
-    </ol>
-    <p>Skip instructions that are not relevant to your use-case.</p>
-    <p><img src="../ll-ifu/img/logo mark.svg" alt="app icon" width="35px" class="inline-shift"/> Lifelight app icon. Start the application by clicking this icon.</p>
-    <h3>Enter your biometric information – sex, age and height.</h3>
-    <div class="column-holder">
-      <div class="text-column">
-        <ul>
-          <li> Choose  biometrics  by touching the three pill buttons for sex, age and height.</li>
-          <li>Starting the measurement won’t be possible unless a value is selected for each biometric.</li>
-          <li>Press ‘Reset’ (x button) at any time to clear all values.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="column2b">
-    <img src="../ll-ifu/img/biometrics_gender.PNG" width="200px" height="430px"/>
-    <img src="../ll-ifu/img/biometrics_age.PNG" width="200px" height="430px"/>
-    <img src="../ll-ifu/img/biometrics_height.PNG" width="200px" height="430px"/>
-    </div>
-      <div class="break"></div>
-    <!--PRINT BREAK-->
-    <h3>Align your face within the blue rectangle.</h3>
-    <div class="column2b"><img src="../ll-ifu/img/face.png" alt="face" width="250px" height="530px"/></div>
-    <h3>Lifelight is ready to take a measurement when the biometric information is entered and your face is aligned with the blue outline.</h3>
-    <div class="column-holder">
-      <div class="column2">
-        <ul>
-          <li>When ready press the start button</li>
-        </ul>
-      </div>
-      <div class="column2">
-        <ul>
-          <li>You can stop the measurement by pressing the cancel button.</li>
-        </ul>
-      </div>
-    </div>
-    <h3>During the measurement</h3>
-    <div class="text-column">
-      <ul>
-        <li>Audible chimes mark the start, end and 10 second segments of the measurement time period.</li>
-        <li>You can control the volume of the audible chimes with the device volume buttons. </li>
-        <li>During the measurement you must remain still and not speak.</li>
-        <li>During the measurement, operators should not talk to subjects. </li>
-        <li>During the measurement the device must remain still and free from vibration or wobble.</li>
-      </ul>
-    </div>
-    <div class="break"></div>
-    <!--PRINT BREAK-->
-
-    <h3>Measurement Signal Quality indicators.</h3>
-    <div class="text-column"> <img src="../ll-ifu/img/sqi.svg" alt="signal quality icons" class="img-reduced"/>
-      <ul>
-        <li>These are displayed during the measurement when instructions are turned off. Otherwise text versions are displayed.</li>
-        <li>MSQ indicators are provided by the algorithm that receives the numeric colour values by the app.</li>
-        <li>These are primarily affected by the lighting of the subject and environment and subject/device movement during the measurement. </li>
-      </ul>
-    </div>
-    <h3>Measurement Duration</h3>
+    <h3>Enter your biometric information - sex, age and height</h3>
     <ul>
-      <li>The measurement will take 60 seconds. Time remaining is indicated by seconds remaining and by a line of MSQ indicators when instructions are turned off.</li>
+        <li>Enter your age, height and sex then press submit</li>
+        <li>For height, press cm/ft to change between metric and imperial units.</li>
+        <li>Starting the reading won't be possible unless the biometric values are all
+            completed.
+        </li>
+        <li>After you have entered your biometrics, you will be shown instructions on how to complete the Lifelight
+            Measurement.</li>
     </ul>
-    <h3>Measurement Results</h3>
+    <h3>Taking a Measurement</h3>
     <ul>
-      <li>Results are displayed on the device measurement screen during and at the end of the measurement. No results are stored on the device after the user leaves the measurement screen.</li>
-    </ul>
-    <h3>Shut-down procedure.</h3>
-    <ul>
-      <li>To quit or shut down Lifelight press the home or power button on the device to take focus away from the application.</li>
-    </ul>
-    </div>
-    <!--closes grey div-->
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
+      <li>Centre your face in the screen and a white rectangle will appear.</li>
+      <li>On screen guidance will help you position your face correctly as well as provide
+          guidance on lighting and device motion
+      </li>
+      <li>When you are in the right position the Lifelight reading will start</li>
+      <li>The reading will take 40 seconds. A countdown bar is displayed at the top of the screen to indicate how
+          much time the reading has taken.
+      </li>
+      <li>Remain still for the duration of the reading.</li>
+      <li>You can stop a reading at any time by pressing the cancel button at the bottom of the screen.</li>
+      <li>Once the 40s is completed your reading results will be displayed</li>
+  </ul>
   </section>
   <section id="retake"><!--When to retake a measurement-->
     <h2>When to retake a measurement</h2>
-    <div class="text-column">
+    <div>
       <p>You can retake a measurement if there is any reason to assume a poor measurement has occurred.</p>
       <p>It is possible to cancel the measurement before the end and restart.</p>
       <ul>
-        <li> Retake if the final overall MSQ is low. (When overall signal quality is low no results will be displayed; ‘?’ will show in place of figures.)</li>
+        <li> Retake if the overall measurement quality is low. (When overall reading quality
+          is low no results will be displayed.)</li>
         <li>Retake if the subject moves or talks during the measurement.</li>
         <li>Retake if the table or stand is knocked or moved during the measurement.</li>
         <li>Retake if the light is interrupted or changes, as might happen if something passes across or light source or lighting is turned on or off.</li>
       </ul>
     </div>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <div class="break"></div>
   <!--PRINT BREAK-->
   <section id="accuracy"><!--Measuring degree of accuracy-->
     <h2>Measuring degree of accuracy</h2>
-    <div class="text-column">
+    <div>
       <h3>Heart rate</h3>
       <p>Measure heart rate with an accuracy and precision of 1.34 beats per minute rms error for a validated range of 52 – 111 BPM.</p>
       <h3>Systolic Blood Pressure</h3>
@@ -413,25 +330,12 @@
       <h3>Validation</h3>
       <p>The data is based on the results from Lifelight Non-Invasive Blood Pressure and Heart Rate Clinical Validation Study (Lifelight Pivotal Clinical Investigation, Study 001).<u></u><u></u></p>
       </div>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
-  </section>
-  <section id="settings"><!--Setting screen-->
-    <h2>Settings screen</h2>
-    <div class="text-column">
-      <h3>Show instructions</h3>
-      <p>For new and naïve users it is recommended to show instructions. You can turn this on or off.</p>
-      <h3>Remember previous subject's biometrics</h3>
-      <p>By default the subject's biometric information is reset at the end of the measurement. You can change this so that the subject's biometric information is remembered when you return to the start screen.</p>
-      <h3>Save changes</h3>
-      <p>To retain any changed settings, press save. </p>
-    </div>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <section id="technical"><!--Setting screen-->
     <h2>Technical Description</h2>
-    <div class="text-column">
-      <p>Lifelight runs only on validated devices. These are the iPad 6th Generation (9.7&quot;), iPad 7th Generation (10.2&quot;), and iPad 8th Generation (10.2&quot;) using iOS 14.3 or later.</p>
-      <p>The software is installed using the Apple software distribution app 'TestFlight'. Please follow the instructions on TestFlight to install a copy of the Lifelight App. </p>
+    <div>
+      <p>Lifelight runs only on validated devices. The list of validated devices can be
+        found at <a href="https://lifelight.ai/validated-devices/">https://lifelight.ai/validated-devices/ </a>.</p>
       <p>During installation you will be asked to allow access to the device's camera. You must accept this request or Lifelight will not function. </p>
       <p>Once installed, Lifelight is fully configured and needs no further setup or calibration. </p>
       <p>Lifelight uses light reflected from the face to take a measurement. As such it should be used with the subject's face well lit. Temperature and humidity (in so far as they do not affect the lighting of the subject) will not interfere with the functioning of Lifelight. </p>
@@ -439,19 +343,17 @@
       <p>Other than access to the Internet, Lifelight has no further network requirements. As a stand alone app, Lifelight does not connect with any other IT network or service. </p>
       <p>Data is sent to the server securely over an encrypted channel, is stored securely on the AWS system, and contains no personally identifiable data (PID). The only data sent is age, height, sex and the average colour of the subject's face (measured 30 times a second). </p>
     </div>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <div class="break"></div>
   <!--PRINT BREAK-->
   <section id="other"><!--Other-->
     <h2>Other</h2>
-    <div class="column-holder">
-      <div class="column2">
+    <div>
+      <div>
         <h3>Maintenance / Frequency</h3>
         <p>Update software and device operating system when updates become available. </p>
-        <p>Clean device when necessary. </p>
       </div>
-      <div class="column2">
+      <div>
         <h3>Serious Incident</h3>
         <p>Any serious incident that has occurred in relation to the device should be reported to the manufacturer and the competent authority of the Member State in which the user and/or subject is established.</p>
       </div>
@@ -483,7 +385,6 @@
     <p>&nbsp;</p>
     <h3>Decommissioning and disposal of the software.</h3>
     <p>The application can be deleted from the device using the standard method for deleting applications for the platform. In the circumstance that Lifelight is deleted, no information will be retained on the device.</p>
-    <div class="toc-button"> <a href="#toc">Back to table of contents</a> </div>
   </section>
   <p><em>Before using this product, the healthcare provider should study carefully the indications, intended purpose, recommendations, warnings and instructions, as well as the available product-specific information. Xim Ltd is not liable for problems arising from the use of the device outside of its indicated uses and similar matters outside the control of xim Ltd.</em></p>
   <p><em>Information provided in this Instructions for Use is intended for healthcare providers, or by a patient who is under the instruction of a healthcare provider.</em></p>
