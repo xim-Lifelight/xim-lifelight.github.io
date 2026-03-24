@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lifelight Connect | Support</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f9f9f9;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      min-height: 100vh;
+      padding: 40px 48px 60px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 36px;
+    }
+
+    .logo {
+      height: 36px;
+      width: auto;
+    }
+
+    /* Hero */
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 30px;
+      font-weight: 400;
+      color: #1a1a2e;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 36px;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #07646A;
+      margin-bottom: 12px;
+    }
+
+    /* What is box */
+    .what-box {
+      background: #f4f4f4;
+      border-radius: 10px;
+      padding: 18px 20px;
+    }
+
+    .what-box p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    /* Contact box */
+    .contact-box {
+      background: #f0faf9;
+      border: 1px solid #b2e8e3;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 8px;
+    }
+
+    .contact-label {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #07646A;
+      margin-bottom: 4px;
+    }
+
+    .contact-email {
+      font-size: 17px;
+      font-weight: 500;
+      color: #1a1a2e;
+      margin-bottom: 14px;
+    }
+
+    .contact-box p {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .contact-box ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .contact-box ul li {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .sla {
+      font-size: 13px;
+      color: #888;
+      margin-top: 8px;
+    }
+
+    /* Notice box */
+    .notice {
+      border-left: 4px solid #04BCA9;
+      background: #f0faf9;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .notice p {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .notice p strong {
+      color: #1a1a2e;
+    }
+
+    .notice ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .notice ul li {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    /* FAQ */
+    .faq {
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #1a1a2e;
+      line-height: 1.4;
+      transition: background 0.15s;
+    }
+
+    .faq-question:hover {
+      background: #f9f9f9;
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #e5e5e5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s, background 0.15s;
+    }
+
+    .faq-chevron svg {
+      width: 10px;
+      height: 10px;
+      stroke: #555;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke 0.15s;
+    }
+
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+      background: #04BCA9;
+    }
+
+    .faq-item.open .faq-chevron svg {
+      stroke: #fff;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 20px 16px;
+      font-size: 13px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .faq-answer a {
+      color: #07646A;
+      text-decoration: none;
+    }
+
+    .faq-answer a:hover {
+      text-decoration: underline;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    /* Documents */
+    .docs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .doc-card {
+      background: #f4f4f4;
+      border-radius: 8px;
+      padding: 16px 18px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.15s;
+    }
+
+    .doc-card:hover {
+      background: #eaeaea;
+    }
+
+    .doc-card .doc-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: #07646A;
+      margin-bottom: 4px;
+    }
+
+    .doc-card .doc-desc {
+      font-size: 12px;
+      color: #777;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e5e5;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer a {
+      font-size: 12px;
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #07646A;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .page { padding: 24px 20px 48px; }
+      .hero h1 { font-size: 24px; }
+      .docs-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="header">
+      <img class="logo" src="data:image/png;base64,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" alt="Lifelight Connect" />
+    </div>
+
+    <div class="hero">
+      <h1>Need help with Lifelight Connect?</h1>
+      <p>You'll find answers to common questions below, or you can contact our support team directly.</p>
+    </div>
+
+    <div class="section">
+      <h2>What is Lifelight Connect?</h2>
+      <div class="what-box">
+        <p>Lifelight Connect is a mobile app available on iOS and Android that gives you access to the Lifelight medical device technology. It allows you to take cuff-free blood pressure and heart rate readings using your smartphone camera, and share a summary report with your doctor or nurse.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contact us</h2>
+      <div class="contact-box">
+        <div class="contact-label">Support email</div>
+        <div class="contact-email">connect@lifelight.ai</div>
+        <p>To help us respond as quickly as possible, please include the following in your message:</p>
+        <ul>
+          <li>Your device model (e.g. iPhone 14, Samsung Galaxy S22)</li>
+          <li>Your app version (found in Settings within the app)</li>
+          <li>A brief description of your issue</li>
+        </ul>
+      </div>
+      <p class="sla">We aim to respond within 2 business days.</p>
+    </div>
+
+    <div class="section">
+      <h2>Important information</h2>
+      <div class="notice">
+        <p><strong>Lifelight Connect provides access to Lifelight, a CE certified Class IIa medical device</strong>, available in the UK and EU. Please read the following carefully:</p>
+        <ul>
+          <li>Lifelight is intended for spot-check measurement of blood pressure and heart rate only. It is not intended to replace professional medical advice.</li>
+          <li>Only a healthcare professional can diagnose conditions related to blood pressure or heart rate.</li>
+          <li>If you are concerned about your results or feel unwell, please contact a qualified healthcare professional.</li>
+          <li>If you believe a Lifelight reading may have affected a clinical decision or caused harm, please contact us immediately at <a href="mailto:connect@lifelight.ai" style="color:#07646A;">connect@lifelight.ai</a> — we treat all such reports as a priority.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Frequently asked questions</h2>
+      <div class="faq" id="faq">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I get the best results from a reading?
+            <span class="faq-chevron">
+              <svg viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">Sit comfortably and keep still during the reading. Ensure your face is evenly lit — avoid strong backlighting. Hold your phone steady at eye level. Avoid taking readings immediately after exercise, caffeine, or smoking. The app will guide you through each step.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is my device compatible?
+            <span class="faq-chevron">
+              <svg viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">Lifelight Connect works with a range of validated iOS and Android devices. View the full <a href="https://lifelight.ai/validated-devices">validated device list</a> on our website, or contact us at <a href="mailto:connect@lifelight.ai">connect@lifelight.ai</a> if you have any questions about your specific device.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What do my results mean?
+            <span class="faq-chevron">
+              <svg viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">The app displays your blood pressure (systolic and diastolic) and heart rate. It does not provide a diagnosis. If your readings are consistently outside the normal range, or if you have any concerns, please speak to a healthcare professional.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I cancel my subscription?
+            <span class="faq-chevron">
+              <svg viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">Subscriptions are managed through the App Store (iOS) or Google Play (Android) — not through Lifelight directly. To cancel, go to your device's subscription settings and select Lifelight Connect. Changes take effect at the end of your current billing period.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How is my health data stored?
+            <span class="faq-chevron">
+              <svg viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">Your measurement data is stored locally on your device using encrypted storage. We do not share your personal health data with third parties. Please see our <a href="https://xim-lifelight.github.io/privacy-policy/lifelight-privacy-policy.html" target="_blank">Privacy Notice</a> for full details.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Documents</h2>
+      <div class="docs-grid">
+        <a href="https://xim-lifelight.github.io/ifu/ll-ifu/ll-singleproduct-ifu-c1.html" class="doc-card" target="_blank">
+          <div class="doc-title">Lifelight IFU</div>
+          <div class="doc-desc">Full guidance on safe and effective use of the Lifelight medical device</div>
+        </a>
+        <a href="https://xim-lifelight.github.io/privacy-policy/lifelight-privacy-policy.html" class="doc-card" target="_blank">
+          <div class="doc-title">Privacy Notice</div>
+          <div class="doc-desc">How we collect, store and protect your data</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="https://lifelight.ai">lifelight.ai</a>
+      <a href="https://xim-lifelight.github.io/privacy-policy/lifelight-privacy-policy.html" target="_blank">Privacy Notice</a>
+      <a href="https://xim-lifelight.github.io/termsandconditions/lifelight-connect/lifelight-connect-terms-and-conditions" target="_blank">Terms of Use</a>
+      <span style="font-size:12px;color:#aaa;">© 2025 Xim Limited</span>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById('faq').addEventListener('click', function(e) {
+      const btn = e.target.closest('.faq-question');
+      if (!btn) return;
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  </script>
+</body>
+</html>
