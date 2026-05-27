@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0071)https://xim-lifelight.github.io/ifu/ll-ifu/ll-singleproduct-ifu-c1.html -->
-<html><head>
+<html data-lang="it"><head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173128924-1"></script>
   <script>
@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
   <link href="llifu-styles.css" rel="stylesheet" type="text/css">
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,11 @@
     <img src="./img/operator and subject.svg" alt="soggetto e operatore con lifelight" width="400px" class="img-reduced"></section>
   <section id="info"><!--top plate info COPY FROM HERE-->
     <div class="column2">
-      <p><strong>Data di emissione:</strong> 17/11/25 <br>
+      <p><strong>Data di emissione:</strong> <span class="ifu-date"></span> <br>
         <strong>Rif. IFU:</strong> REC-QMS-005<br>
-        <strong>Revisione:</strong> 9<br>
-        <strong>In caso di revisione avvenuta, data di revisione:</strong> 17/11/25<br>
-        <strong>Numero di controllo delle modifiche:</strong> CC-2025-002<br>
+        <strong>Revisione:</strong> <span class="ifu-revision"></span><br>
+        <strong>In caso di revisione avvenuta, data di revisione:</strong> <span class="ifu-date"></span><br>
+        <strong>Numero di controllo delle modifiche:</strong> <span class="ifu-change-control"></span><br>
         <strong>Identificativo univoco del dispositivo:</strong> 05060776720019<br>
         <strong>Nome del dispositivo:</strong> Lifelight<br>
         <strong>Marchio d'impresa:</strong> Lifelight</p>
@@ -54,9 +55,9 @@
       </div>
       <div class="columnSQ">
         <p class="small">(01)05060776720019 </p>
-        <p class="small">(11)251117</p>
+        <p class="small"><span class="ifu-mfgDate"></span></p>
         <p class="small">(21)LLF-002</p>
-        <p class="small">(8012)6.0.0-1</p>
+        <p class="small"><span class="ifu-software-version"></span></p>
       </div>
     </div>
     <h3>Simboli sul dispositivo e documentazione</h3>
@@ -461,7 +462,6 @@
     <img style="margin-left: 20px;" src="./img/medical.svg" width="50px" alt=""><p><strong>0123</strong></p>
   </div>
 </main>
-
 
 
 </body></html>

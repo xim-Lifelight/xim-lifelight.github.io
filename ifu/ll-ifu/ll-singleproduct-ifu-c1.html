@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173128924-1"></script>
@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
   <link href="llifu-styles.css" rel="stylesheet" type="text/css">
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -31,11 +32,11 @@
          width="400px" class="img-reduced"/></section>
   <section id="info"><!--top plate info COPY FROM HERE-->
       <div class="column2">
-        <p><strong>Date of Issue:</strong> 17/11/25 <br>
+        <p><strong>Date of Issue:</strong> <span class="ifu-date"></span> <br>
           <strong>IFU Ref:</strong> REC-QMS-005<br>
-          <strong>Revision:</strong> 9<br>
-          <strong>If revised date of revision:</strong> 17/11/25<br>
-          <strong>Change Control Number:</strong> CC-2025-002<br>
+          <strong>Revision:</strong> <span class="ifu-revision"></span><br>
+          <strong>If revised date of revision:</strong> <span class="ifu-date"></span><br>
+          <strong>Change Control Number:</strong> <span class="ifu-change-control"></span><br>
           <strong>Unique Device Identifier:</strong> 05060776720019<br>
           <strong>Name of device:</strong> Lifelight<br>
           <strong>Trademark:</strong> Lifelight</p>
@@ -56,9 +57,9 @@
       </div>
       <div class="columnSQ">
         <p class="small">(01)05060776720019&nbsp;</p>
-        <p class="small">(11)251117</p>
+        <p class="small"><span class="ifu-mfgDate"></span></p>
         <p class="small">(21)LLF-002</p>
-        <p class="small">(8012)6.0.0-1</p>
+        <p class="small"><span class="ifu-software-version"></span></p>
       </div>
     </div>
     <h3>Symbols on the device and documentation</h3>
@@ -463,7 +464,6 @@
     <img style="margin-left: 20px;" src="img/medical.svg" width="50px" alt=""/>
     <p><strong>0123</strong></p>
   </div>
-</main>
-</body>
+</main></body>
 </html>
 
