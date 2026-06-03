@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173128924-1"></script>
@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
   <link href="llifu-styles.css" rel="stylesheet" type="text/css">
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -31,11 +32,11 @@
          width="400px" class="img-reduced"/></section>
   <section id="info"><!--top plate info COPY FROM HERE-->
       <div class="column2">
-        <p><strong>Date of Issue:</strong> 17/11/25 <br>
+        <p><strong>Date of Issue:</strong> <span class="ifu-date"></span> <br>
           <strong>IFU Ref:</strong> REC-QMS-005<br>
-          <strong>Revision:</strong> 9<br>
-          <strong>If revised date of revision:</strong> 17/11/25<br>
-          <strong>Change Control Number:</strong> CC-2025-002<br>
+          <strong>Revision:</strong> <span class="ifu-revision"></span><br>
+          <strong>If revised date of revision:</strong> <span class="ifu-date"></span><br>
+          <strong>Change Control Number:</strong> <span class="ifu-change-control"></span><br>
           <strong>Unique Device Identifier:</strong> 05060776720019<br>
           <strong>Name of device:</strong> Lifelight<br>
           <strong>Trademark:</strong> Lifelight</p>
@@ -56,9 +57,9 @@
       </div>
       <div class="columnSQ">
         <p class="small">(01)05060776720019&nbsp;</p>
-        <p class="small">(11)251117</p>
+        <p class="small"><span class="ifu-mfgDate"></span></p>
         <p class="small">(21)LLF-002</p>
-        <p class="small">(8012)6.0.0-1</p>
+        <p class="small"><span class="ifu-software-version"></span></p>
       </div>
     </div>
     <h3>Symbols on the device and documentation</h3>
@@ -133,7 +134,7 @@
         Adult patients aged 18 and above, regardless of ethnicity or gender. This medical device software is not intended for pregnant women, paediatric use, or persons with atrial fibrillation or low perfusion conditions like anaemia, jaundice, birthmarks, rosacea, psoriasis, acute acne and erythropoietic protoporphyria.</p>
       <p><strong>Intended Environments of Use and Intended Users:</strong><br>
         The most likely locations for use are hospitals, clinics, residential care, other healthcare environments and the patient’s home.</p>
-      <p>The Lifelight software is to be used either by healthcare providers, or by a patient who is under the instruction of a healthcare provider.</p>
+      <p>The Lifelight software is to be used either by healthcare providers, or by a patient in their own home.</p>
       <p>Lifelight is indicated for use with patients at rest, during no-motion, in a well-lit environment.</p>
       <h3><strong>Contraindications, Adverse Effects, Useful Information, Important Notes on Use of Lifelight Software, Cautions, Warnings and Precautions:</strong></h3>
       <p><strong>Contraindications:</strong><br>
@@ -351,9 +352,9 @@
       <p>During installation you will be asked to allow access to the device's camera. You must accept this request or Lifelight will not function. </p>
       <p>Once installed, Lifelight is fully configured and needs no further setup or calibration. </p>
       <p>Lifelight uses light reflected from the face to take a measurement. As such it should be used with the subject's face well lit. Temperature and humidity (in so far as they do not affect the lighting of the subject) will not interfere with the functioning of Lifelight. </p>
-      <p>Lifelight communicates with a secure server hosted by Amazon Web Services (AWS) in order to calculate the vital signs displayed. In order to function, the Lifelight app needs a good quality connection with the Internet via a strong WiFi signal. On launching and before a measurement is taken, Lifelight tests the strength of the connection and will not enable a measurement to be completed (and display a warning) if the connection is too weak. If the connection should fail, or be corrupted in any way then the reading will fail with a warning message. </p>
+      <p>Lifelight communicates with a secure server hosted by Microsoft Azure in order to calculate the vital signs displayed. In order to function, the Lifelight app needs a good quality connection with the Internet via a strong WiFi signal. On launching and before a measurement is taken, Lifelight tests the strength of the connection and will not enable a measurement to be completed (and display a warning) if the connection is too weak. If the connection should fail, or be corrupted in any way then the reading will fail with a warning message. </p>
       <p>Other than access to the Internet, Lifelight has no further network requirements. As a stand alone app, Lifelight does not connect with any other IT network or service. </p>
-      <p>Data is sent to the server securely over an encrypted channel, is stored securely on the AWS system, and contains no personally identifiable data (PID). The only data sent is age, height, sex and the average colour of the subject's face (measured 30 times a second). </p>
+      <p>Data is sent to the server securely over an encrypted channel, is stored securely on the Microsoft Azure system, and contains no personally identifiable data (PID). The only data sent is age, height, sex and the average colour of the subject's face (measured 30 times a second). </p>
     </div>
   </section>
   <div class="break"></div>
@@ -398,8 +399,8 @@
     <h3>Decommissioning and disposal of the software.</h3>
     <p>The application can be deleted from the device using the standard method for deleting applications for the platform. In the circumstance that Lifelight is deleted, no information will be retained on the device.</p>
   </section>
-  <p><em>Before using this product, the healthcare provider should study carefully the indications, intended purpose, recommendations, warnings and instructions, as well as the available product-specific information. Xim Ltd is not liable for problems arising from the use of the device outside of its indicated uses and similar matters outside the control of xim Ltd.</em></p>
-  <p><em>Information provided in this Instructions for Use is intended for healthcare providers, or by a patient who is under the instruction of a healthcare provider.</em></p>
+  <p><em>Before using this product, study carefully the indications, intended purpose, recommendations, warnings and instructions, as well as the available product-specific information. Xim Ltd is not liable for problems arising from the use of the device outside of its indicated uses and similar matters outside the control of Xim Ltd.</em></p>
+  <p><em>Information provided in this Instructions for Use is intended for healthcare providers, or by a patient in their own home.</em></p>
   <p><em>For any question or further information on this instructions for use, please make contact via www.lifelight.ai. If you require printed version of this IFU, please email info@lifelight.ai to request a copy.</em></p>
 
   <div class="column2">
@@ -463,7 +464,6 @@
     <img style="margin-left: 20px;" src="img/medical.svg" width="50px" alt=""/>
     <p><strong>0123</strong></p>
   </div>
-</main>
-</body>
+</main></body>
 </html>
 
