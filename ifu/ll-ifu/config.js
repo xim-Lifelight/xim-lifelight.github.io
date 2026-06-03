@@ -1,3 +1,4 @@
+/*
 var CONFIG = {
   dateOfIssue:     "27/05/26",
   revision:        "10",
@@ -29,3 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
   var lang = document.documentElement.dataset.lang || 'en';
   set('ifu-change-control', c.changeControl[lang] || c.changeControl['en']);
 });
+*/
