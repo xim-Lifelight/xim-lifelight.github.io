@@ -31,11 +31,11 @@
         <img src="./img/operator and subject.svg" alt="Testperson und Bediener mit Lifelight" width="400px" class="img-reduced"></section>
     <section id="info"><!--top plate info COPY FROM HERE-->
         <div class="column2">
-            <p><strong>Ausgabedatum:</strong> 27/05/26<br>
+            <p><strong>Ausgabedatum:</strong> {{dateOfIssue}}<br>
                 <strong>IFU-Ref.:</strong> REC-QMS-005<br>
-                <strong>Überarbeitung:</strong> 10<br>
-                <strong>Falls überarbeitet, Datum der Überarbeitung:</strong> 27/05/26<br>
-                <strong>Änderungskontrollnummer:</strong> siehe e-QMS<br>
+                <strong>Überarbeitung:</strong> {{revision}}<br>
+                <strong>Falls überarbeitet, Datum der Überarbeitung:</strong> {{dateOfIssue}}<br>
+                <strong>Änderungskontrollnummer:</strong> {{changeControl}}<br>
                 <strong>Eindeutige Gerätekennung:</strong> 05060776720019<br>
                 <strong>Gerätename:</strong> Lifelight<br>
                 <strong>Marke:</strong> Lifelight</p>
@@ -56,9 +56,9 @@
             </div>
             <div class="columnSQ">
                 <p class="small">(01)05060776720019 </p>
-                <p class="small">(11)260527</p>
+                <p class="small">{{mfgDate}}</p>
                 <p class="small">(21)LLF-002</p>
-                <p class="small">(8012)6.0.1-0</p>
+                <p class="small">{{softwareVersion}}</p>
             </div>
         </div>
         <h3>Symbole auf dem Gerät und in der Dokumentation</h3>

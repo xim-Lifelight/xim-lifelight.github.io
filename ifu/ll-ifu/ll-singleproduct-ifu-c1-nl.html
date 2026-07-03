@@ -31,11 +31,11 @@
     <img src="./img/operator and subject.svg" alt="persoon en gebruiker met Lifelight" width="400px" class="img-reduced"></section>
   <section id="info"><!--top plate info COPY FROM HERE-->
     <div class="column2">
-      <p><strong>Datum van uitgifte:</strong> 27/05/26 <br>
+      <p><strong>Datum van uitgifte:</strong> {{dateOfIssue}} <br>
         <strong>IFU-referentie:</strong> REC-QMS-005 <br>
-        <strong>Revisie:</strong> 10<br>
-        <strong>Indien herzien, datum van revisie:</strong> 27/05/26<br>
-        <strong>Wijzigingscontrolenummer:</strong> zie e-QMS<br>
+        <strong>Revisie:</strong> {{revision}}<br>
+        <strong>Indien herzien, datum van revisie:</strong> {{dateOfIssue}}<br>
+        <strong>Wijzigingscontrolenummer:</strong> {{changeControl}}<br>
         <strong>Unieke hulpmiddelenidentificatie (UDI):</strong> 05060776720019<br>
         <strong>Naam van het hulpmiddel:</strong> Lifelight<br>
         <strong>Handelsmerk:</strong> Lifelight</p>
@@ -56,9 +56,9 @@
       </div>
       <div class="columnSQ">
         <p class="small">(01)05060776720019 </p>
-        <p class="small">(11)260527</p>
+        <p class="small">{{mfgDate}}</p>
         <p class="small">(21)LLF-002</p>
-        <p class="small">(8012)6.0.1-0</p>
+        <p class="small">{{softwareVersion}}</p>
       </div>
     </div>
     <h3>Symbolen op het apparaat en documentatie</h3>

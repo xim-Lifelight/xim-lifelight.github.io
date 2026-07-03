@@ -31,11 +31,11 @@
          width="400px" class="img-reduced"/></section>
   <section id="info"><!--top plate info COPY FROM HERE-->
       <div class="column2">
-        <p><strong>Date of Issue:</strong> 27/05/26 <br>
+        <p><strong>Date of Issue:</strong> {{dateOfIssue}} <br>
           <strong>IFU Ref:</strong> REC-QMS-005<br>
-          <strong>Revision:</strong> 10<br>
-          <strong>If revised date of revision:</strong> 27/05/26<br>
-          <strong>Change Control Number:</strong> refer to e-QMS<br>
+          <strong>Revision:</strong> {{revision}}<br>
+          <strong>If revised date of revision:</strong> {{dateOfIssue}}<br>
+          <strong>Change Control Number:</strong> {{changeControl}}<br>
           <strong>Unique Device Identifier:</strong> 05060776720019<br>
           <strong>Name of device:</strong> Lifelight<br>
           <strong>Trademark:</strong> Lifelight</p>
@@ -56,9 +56,9 @@
       </div>
       <div class="columnSQ">
         <p class="small">(01)05060776720019&nbsp;</p>
-        <p class="small">(11)260527</p>
+        <p class="small">{{mfgDate}}</p>
         <p class="small">(21)LLF-002</p>
-        <p class="small">(8012)6.0.1-0</p>
+        <p class="small">{{softwareVersion}}</p>
       </div>
     </div>
     <h3>Symbols on the device and documentation</h3>

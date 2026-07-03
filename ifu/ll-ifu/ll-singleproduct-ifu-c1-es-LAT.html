@@ -30,11 +30,11 @@
         <img src="./img/operator and subject.svg" alt="usuario y operador con Lifelight" width="400px" class="img-reduced"></section>
     <section id="info"><!--top plate info COPY FROM HERE-->
         <div class="column2">
-            <p><strong>Fecha de emisión:</strong> 27/05/26 <br>
+            <p><strong>Fecha de emisión:</strong> {{dateOfIssue}} <br>
                 <strong>Ref. IFU:</strong> REC-QMS-005<br>
-                <strong>Revisión:</strong> 10<br>
-                <strong>Fecha de revisión (si fue revisado):</strong> 27/05/26<br>
-                <strong>Número de control de cambios:</strong> consultar el e-QMS<br>
+                <strong>Revisión:</strong> {{revision}}<br>
+                <strong>Fecha de revisión (si fue revisado):</strong> {{dateOfIssue}}<br>
+                <strong>Número de control de cambios:</strong> {{changeControl}}<br>
                 <strong>Identificador único del dispositivo:</strong> 05060776720019<br>
                 <strong>Nombre del dispositivo:</strong> Lifelight<br>
                 <strong>Marca registrada:</strong> Lifelight</p>
@@ -55,9 +55,9 @@
             </div>
             <div class="columnSQ">
                 <p class="small">(01)05060776720019 </p>
-                <p class="small">(11)260527</p>
+                <p class="small">{{mfgDate}}</p>
                 <p class="small">(21)LLF-002</p>
-                <p class="small">(8012)6.0.1-0</p>
+                <p class="small">{{softwareVersion}}</p>
             </div>
         </div>
         <h3>Símbolos en el dispositivo y documentación</h3>
