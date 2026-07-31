@@ -125,6 +125,10 @@ table.blueTable thead th {
   color: #fff;
   text-decoration: none; }
 
+.footnote {
+    color: #7f8c8d;
+    font-size: 0.85em; }
+
 /*-------------FONTS-----------------*/
 strong {
   font-weight: 700; }
